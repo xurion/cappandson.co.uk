@@ -1,0 +1,67 @@
+<?php
+    $title = (isset($title)) ? $title . ' - ' : '';
+    $title .= 'Capp and son electricians Southend, Essex, Southend-on-Sea, Rochford, Hockley, Rayleigh, Leigh-on-Sea';
+?>
+<!doctype html>
+<html>
+
+    <head>
+
+        <meta charset="utf-8" />
+        <meta name="keywords" content="Electrician,Electircian Rochford,Electrician Southend,Electrician Essex,Rochford,Southend,Essex" />
+        <meta name="description" content="Electrician in Southend and Rochford Essex" />
+
+        <link href="css/jquery-ui/start/jquery-ui-1.8.20.custom.css" rel="stylesheet" />
+        <link href="css/style.css" rel="stylesheet" />
+
+        <script type="text/javascript" src="script/jquery.js"></script>
+        <script type="text/javascript" src="script/jquery-ui/jquery-ui-1.8.20.custom.min.js"></script>
+        <script type="text/javascript" src="script/common.js"></script>
+
+        <title><?php echo $title; ?></title>
+
+    </head>
+
+    <body>
+
+        <div id="wrapper">
+
+            <div id="top">
+                <a href="http://www.cappandson.co.uk" id="logo">
+                    <img src="images/logo.gif" width="201" height="81" alt="Capp and son electricians" />
+                </a>
+                <div id="topContactDetails">
+                    <span class="tagline">A local name you can trust</span>
+                    <span class="telephoneNumber">07860 828071</span>
+                    <a class="email" href="mailto:enquiries@cappandson.co.uk">enquiries@cappandson.co.uk</a>
+                </div>
+                <div class="clear"></div>
+            </div>
+
+            <div id="menu">
+                <ul>
+                    <li class="first">
+                        <a href="http://www.cappandson.co.uk">Home</a>
+                    </li>
+                    <li>
+                        <a href="services.php">Services</a>
+                    </li>
+                    <li>
+                        <a href="area-coverage.php">Area coverage</a>
+                    </li>
+                    <li>
+                        <a href="carpentry.php">Carpentry</a>
+                    </li>
+                    <li class="last">
+                        <a href="contact-us.php">Contact us</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="oneBorder"></div>
+
+            <div id="content">
+                
+                <?php if ($_GET['sent'] == 1) { ?>
+                    <div class="sentConfirmation">Thank you. Your enquiry has been sent.</div>
+                <?php } ?>

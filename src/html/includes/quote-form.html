@@ -1,0 +1,43 @@
+<div id="quoteForm">
+
+    <h2>Get a free quote</h2>
+
+    <p>Simply fill out this form with your email and/or telephone number and we'll get back to you with a free quote!</p>
+
+    <form action="/quote.php" method="post">
+
+        <ul>
+
+            <li>
+                <label for="name">Your name</label>
+                <input type="text" id="name" name="name" />
+            </li>
+
+            <li>
+                <label for="email">Your email address</label>
+                <input type="text" id="email" name="email" />
+            </li>
+
+            <li>
+                <label for="phone">Your telephone number</label>
+                <input type="text" id="phone" name="phone" />
+            </li>
+
+            <li>
+                <label for="enquiry">Tell us about what you need</label>
+                <textarea id="enquiry" name="enquiry"></textarea>
+            </li>
+
+            <li class="submitButtonWrapper">
+                <button class="submitButton">
+                    <span>Get quote &raquo;</span>
+                </button>
+            </li>
+
+        </ul>
+        
+        <input type="hidden" name="origin" value="<?php echo $_SERVER['PHP_SELF']; ?>" />
+
+    </form>
+
+</div>
