@@ -1,0 +1,17 @@
+{
+  "name": "cappandson.co.uk",
+  "description": "The main website files for cappandson.co.uk.",
+  "main": "Gruntfile.js",
+  "authors": [
+    "Dean James <djames@brighttalk.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/xurion/cappandson.co.uk",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

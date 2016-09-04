@@ -6,24 +6,21 @@ module.exports = function(grunt) {
 
         includes: {
 
-            files: {
+            build: {
 
-                src: ['**/*.html'],
-                dest: 'html',
                 cwd: 'src/html',
+                src: ['*.html'],
+                dest: 'dist/',
                 options: {
 
-                    includePath: "src/html",
-                    silent: true
+                    includePath: 'src/html/includes'
                 }
             }
+
         },
         clean: {
 
-            html: {
-
-                src: ["html/*.html"]
-            }
+            html: ['dist/*.html']
         }
     });
 
@@ -31,5 +28,5 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-clean');
 
     grunt.registerTask('default', ['build']);
-    grunt.registerTask('build', ['clean:dist', 'includes']);
+    grunt.registerTask('build', ['clean', 'includes']);
 };
