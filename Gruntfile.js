@@ -20,13 +20,29 @@ module.exports = function(grunt) {
         },
         clean: {
 
-            html: ['dist/*.html']
+            html: ['dist/*.html'],
+            images: ['dist/images']
+        },
+        copy: {
+
+            images: {
+
+                files: [{
+
+                    cwd: 'src/images',
+                    expand: true,
+                    src: ['*'],
+                    dest: 'dist/images/',
+                    filter: 'isFile'
+                }]
+            }
         }
     });
 
     grunt.loadNpmTasks('grunt-includes');
     grunt.loadNpmTasks('grunt-contrib-clean');
+    grunt.loadNpmTasks('grunt-contrib-copy');
 
     grunt.registerTask('default', ['build']);
-    grunt.registerTask('build', ['clean', 'includes']);
+    grunt.registerTask('build', ['clean', 'copy', 'includes']);
 };
