@@ -36,13 +36,24 @@ module.exports = function(grunt) {
                     filter: 'isFile'
                 }]
             }
+        },
+        less: {
+
+            dist: {
+
+                files: {
+
+                    'dist/css/main.css': 'src/less/main.less'
+                }
+            }
         }
     });
 
     grunt.loadNpmTasks('grunt-includes');
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-copy');
+    grunt.loadNpmTasks('grunt-contrib-less');
 
     grunt.registerTask('default', ['build']);
-    grunt.registerTask('build', ['clean', 'copy', 'includes']);
+    grunt.registerTask('build', ['clean', 'copy', 'less', 'includes']);
 };
