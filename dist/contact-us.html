@@ -74,22 +74,22 @@
     </div>
 
     <div class="column">
-        <div id="preferAChat">
+        <div class="prefer-a-chat">
 
             <h2>Prefer a chat?</h2>
 
-            If you'd rather call us instead to discuss what you need, here's how to contact us directly:
+            <p>If you'd rather call us to discuss what you need instead, here's how to contact us directly:</p>
 
-            <ul class="contactNumbers">
-                <li class="landline">01702 547816</li>
-                <li class="mobile">07860 828071</li>
+            <ul class="contact-numbers">
+                <li class="contact-number landline">01702 547816</li>
+                <li class="contact-number mobile">07860 828071</li>
             </ul>
 
         </div>
     </div>
 
     <div class="column last">
-        <div id="quoteForm">
+        <div class="quote-form">
 
             <h2>Get a free quote</h2>
 
@@ -97,35 +97,23 @@
 
             <form action="/quote.php" method="post">
 
-                <ul>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Your name" name="name" required>
+                </div>
 
-                    <li>
-                        <label for="name">Your name</label>
-                        <input type="text" id="name" name="name">
-                    </li>
+                <div class="form-group">
+                    <input type="email" class="form-control" placeholder="Your email address" name="email" required>
+                </div>
 
-                    <li>
-                        <label for="email">Your email address</label>
-                        <input type="text" id="email" name="email">
-                    </li>
+                <div class="form-group">
+                    <input type="telephone" class="form-control" placeholder="Your telephone number" name="phone" required>
+                </div>
 
-                    <li>
-                        <label for="phone">Your telephone number</label>
-                        <input type="text" id="phone" name="phone">
-                    </li>
+                <div class="form-group">
+                    <textarea class="form-control" placeholder="Tell us what you need" name="enquiry" required></textarea>
+                </div>
 
-                    <li>
-                        <label for="enquiry">Tell us about what you need</label>
-                        <textarea id="enquiry" name="enquiry"></textarea>
-                    </li>
-
-                    <li class="submitButtonWrapper">
-                        <button class="submitButton">
-                            <span>Get quote &raquo;</span>
-                        </button>
-                    </li>
-
-                </ul>
+                <button type="submit" class="btn btn-primary btn-block">Get quote</button>
 
                 <input type="hidden" name="origin" value="">
 

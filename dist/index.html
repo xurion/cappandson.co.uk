@@ -79,7 +79,7 @@
         </ul>
         <a href="services.html" class="btn btn-primary btn-block">All services</a>
 
-        <div id="quoteForm">
+        <div class="quote-form">
 
             <h2>Get a free quote</h2>
 
@@ -87,71 +87,55 @@
 
             <form action="/quote.php" method="post">
 
-                <ul>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Your name" name="name" required>
+                </div>
 
-                    <li>
-                        <label for="name">Your name</label>
-                        <input type="text" id="name" name="name">
-                    </li>
+                <div class="form-group">
+                    <input type="email" class="form-control" placeholder="Your email address" name="email" required>
+                </div>
 
-                    <li>
-                        <label for="email">Your email address</label>
-                        <input type="text" id="email" name="email">
-                    </li>
+                <div class="form-group">
+                    <input type="telephone" class="form-control" placeholder="Your telephone number" name="phone" required>
+                </div>
 
-                    <li>
-                        <label for="phone">Your telephone number</label>
-                        <input type="text" id="phone" name="phone">
-                    </li>
+                <div class="form-group">
+                    <textarea class="form-control" placeholder="Tell us what you need" name="enquiry" required></textarea>
+                </div>
 
-                    <li>
-                        <label for="enquiry">Tell us about what you need</label>
-                        <textarea id="enquiry" name="enquiry"></textarea>
-                    </li>
-
-                    <li class="submitButtonWrapper">
-                        <button class="submitButton">
-                            <span>Get quote &raquo;</span>
-                        </button>
-                    </li>
-
-                </ul>
+                <button type="submit" class="btn btn-primary btn-block">Get quote</button>
 
                 <input type="hidden" name="origin" value="">
 
             </form>
 
         </div>
-    </div>
-</div>
 
-<div class="row">
+        <div class="areas-we-cover">
 
-    <div class="areas-we-cover">
+            <h2>The areas we cover</h2>
 
-        <h2>The areas we cover</h2>
+            <a href="area-coverage.html"><img src="images/map.gif" alt="The areas we cover" class="map-thumbnail img-responsive"></a>
+            <p><strong>Capp and son are based in Rochford, but we cover a much wider area across Essex.</strong></p>
+            <p>Even if you are outside of our coverage area we will still make every effort to get to you!</p>
+            <p><a href="contact-us.html">Contact us</a> to find out if we can get to you<span class="hidden-xs"> or view our <a href="area-coverage.html">full coverage map</a></span>.</p>
 
-        <p class="areas-description">
-            <a href="area-coverage.html"><img src="images/map-thumb.jpg" width="203" height="116" alt="The areas we cover" class="mapThumb"></a>
-            <strong>Capp and son are based in Rochford, but we cover a much wider area across Essex.</strong><br><br>
-            Even if you are outside of our coverage area we will still make every effort to get to you!<br><br>
-            <a href="contact-us.html">Contact us</a> to find out if we can get to you or view our <a href="area-coverage.html">full coverage map</a>.</p>
+        </div>
 
-    </div>
+        <div class="prefer-a-chat">
 
-    <div id="preferAChat">
+            <h2>Prefer a chat?</h2>
 
-        <h2>Prefer a chat?</h2>
+            <p>If you'd rather call us to discuss what you need instead, here's how to contact us directly:</p>
 
-        If you'd rather call us instead to discuss what you need, here's how to contact us directly:
+            <ul class="contact-numbers">
+                <li class="contact-number landline">01702 547816</li>
+                <li class="contact-number mobile">07860 828071</li>
+            </ul>
 
-        <ul class="contactNumbers">
-            <li class="landline">01702 547816</li>
-            <li class="mobile">07860 828071</li>
-        </ul>
+        </div>
 
     </div>
-
 </div>
 
                 </div>
