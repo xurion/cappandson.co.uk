@@ -183,8 +183,6 @@ ul.bulleted li {
     }
 }
 
-
-
 .contact-numbers {
 
     padding-left: 20px;
@@ -210,30 +208,20 @@ ul.bulleted li {
 
 .footer {
 
-    color: #315b75;
-    padding: 15px 20px;
-
-    a {
-
-        color: inherit;
-    }
-
-    .copyright {
-
-        float: left;
-    }
+    color: @gray-dark;
 
     .base-menu {
 
-        float: right;
+        padding-left: 0;
 
-        li {
+        .base-menu-item {
 
             border-right: 1px solid #275268;
             float: left;
             padding: 0 8px;
 
             &:last-child {
+
                 border: none;
                 padding-right: 0;
             }

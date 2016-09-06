@@ -6886,24 +6886,17 @@ ul.bulleted li {
   background: url(../images/mobile-icon.png) no-repeat;
 }
 .footer {
-  color: #315b75;
-  padding: 15px 20px;
-}
-.footer a {
-  color: inherit;
-}
-.footer .copyright {
-  float: left;
+  color: #333333;
 }
 .footer .base-menu {
-  float: right;
+  padding-left: 0;
 }
-.footer .base-menu li {
+.footer .base-menu .base-menu-item {
   border-right: 1px solid #275268;
   float: left;
   padding: 0 8px;
 }
-.footer .base-menu li:last-child {
+.footer .base-menu .base-menu-item:last-child {
   border: none;
   padding-right: 0;
 }
