@@ -6831,17 +6831,14 @@ ul.bulleted li {
   color: #fff;
   text-decoration: none;
 }
-.alert {
-  margin-bottom: 5px;
+.enquiry-success {
+  margin-bottom: 0;
+  margin-top: 5px;
 }
 .content {
-  background: #2b6380;
-  padding-top: 5px;
-}
-.introduction {
   background: #5686a3;
 }
-.introduction .electrical-services {
+.electrical-services {
   padding-left: 10px;
 }
 .areas-we-cover .map-thumbnail {
@@ -6877,7 +6874,7 @@ ul.bulleted li {
   line-height: 32px;
   margin-bottom: 10px;
   padding-left: 42px;
-  text-shadow: 1px 1px 2px #FFF;
+  text-shadow: 1px 1px 2px #fff;
 }
 .contact-numbers .landline {
   background: url(../images/telephone-icon.png) no-repeat;
@@ -6969,14 +6966,6 @@ ul.bulleted li {
 .email-address-feature a {
   font-size: 18px;
   font-weight: bold;
-}
-.sent-confirmation {
-  background: #CFC;
-  border: 1px solid #090;
-  color: #090;
-  font-size: 18px;
-  margin-bottom: 10px;
-  padding: 10px;
 }
 /* UI mods */
 .ui-dialog {
