@@ -6725,6 +6725,8 @@ button.close {
 /* project variables */
 ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 h1,
 h2,
@@ -6738,9 +6740,7 @@ h3 {
 h1 {
   font-size: 26px;
 }
-h2 {
-  font-size: 22px;
-}
+h2,
 h3 {
   font-size: 22px;
 }
@@ -6838,12 +6838,6 @@ ul.bulleted li {
 .content {
   background: #5686a3;
 }
-.electrical-services {
-  padding-left: 10px;
-}
-.areas-we-cover .map-thumbnail {
-  border: 2px solid #2a536c;
-}
 .one-border {
   background: #2b6380;
   height: 2px;
@@ -6864,6 +6858,27 @@ ul.bulleted li {
   background: #2b6380;
   border-top: 1px solid #fff;
 }
+.footer {
+  color: #333333;
+}
+.footer .base-menu {
+  padding-left: 0;
+}
+.footer .base-menu .base-menu-item {
+  border-right: 1px solid #275268;
+  float: left;
+  padding: 0 8px;
+}
+.footer .base-menu .base-menu-item:last-child {
+  border: none;
+  padding-right: 0;
+}
+.electrical-services {
+  padding-left: 10px;
+}
+.areas-we-cover .map-thumbnail {
+  border: 2px solid #2a536c;
+}
 .contact-numbers {
   padding-left: 20px;
 }
@@ -6882,98 +6897,25 @@ ul.bulleted li {
 .contact-numbers .mobile {
   background: url(../images/mobile-icon.png) no-repeat;
 }
-.footer {
-  color: #333333;
-}
-.footer .base-menu {
-  padding-left: 0;
-}
-.footer .base-menu .base-menu-item {
-  border-right: 1px solid #275268;
-  float: left;
-  padding: 0 8px;
-}
-.footer .base-menu .base-menu-item:last-child {
-  border: none;
-  padding-right: 0;
-}
-.services-gallery {
-  padding: 0 10px;
-}
-.services-gallery .gallery-image {
-  margin-bottom: 10px;
-  text-align: center;
-}
-.services-gallery .gallery-image img {
-  border: 2px solid #1a5270;
+.gallery-image-group {
   margin-bottom: 5px;
+  position: relative;
 }
-.services-gallery .gallery-image a {
+.gallery-image-group .gallery-image {
+  border: 1px solid #1a5270;
+}
+.gallery-image-group .gallery-image-text {
+  background: rgba(0, 0, 0, 0.6);
+  bottom: 0;
   color: #fff;
-  font-size: 14px;
-  font-weight: bold;
-  text-decoration: none;
+  padding: 2px 5px;
+  position: absolute;
+  width: 100%;
 }
-.services-gallery .gallery-image a:hover {
-  text-decoration: underline;
-}
-.services-gallery .gallery-image a:hover img {
-  border-color: #fff;
-}
-.services-gallery .gallery-image .linkText {
-  display: block;
-  margin-bottom: 5px;
-}
-.services-gallery .gallery-image .services-list {
+.services-list {
   display: none;
 }
-.services-gallery .gallery-image .services-list li {
+.services-list li {
   display: inline-block;
   min-width: 210px;
-}
-.services-gallery li {
-  float: left;
-  margin-right: 35px;
-}
-.services-gallery li.end-of-row {
-  margin-right: 0;
-}
-.map {
-  margin-bottom: 10px;
-  text-align: center;
-}
-.map img {
-  border: 2px solid #2A536C;
-}
-.contact-columns .quote-form,
-.contact-columns .prefer-a-chat {
-  float: none;
-  padding-top: 0;
-  width: auto;
-}
-.contact-columns .column {
-  float: left;
-  margin-right: 15px;
-  width: 300px;
-}
-.contact-columns .column:last-child {
-  margin-right: 0;
-}
-.email-address-feature {
-  margin-bottom: 15px;
-  text-align: center;
-}
-.email-address-feature a {
-  font-size: 18px;
-  font-weight: bold;
-}
-/* UI mods */
-.ui-dialog {
-  background: #4B83A0;
-}
-.ui-widget-content {
-  color: #fff;
-}
-.ui-dialog .ui-dialog-content {
-  padding-top: 16px;
 }
