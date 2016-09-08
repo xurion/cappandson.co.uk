@@ -2,23 +2,23 @@ include "header.html"
 
 <h1>Contact us</h1>
 
-<div class="contactColumns">
+<div class="row">
+    <div class="col-xs-12 col-sm-6">
+        <h2 class="hidden-xs">Email us</h2>
+        <p>You can email us at:</p>
+        <p class="text-center">
+            <strong class="h4 visible-xs"><a href="mailto:enquiries@cappandson.co.uk">enquiries@cappandson.co.uk</a></strong>
+            <strong class="h3 hidden-xs"><a href="mailto:enquiries@cappandson.co.uk">enquiries@cappandson.co.uk</a></strong>
+        </p>
+        <p>You can email anything from a simple question to an enquiry request.</p>
+    </div>
 
-    <div class="row">
-        <div class="col-xs-12">
-            <h2 class="hidden-xs">Email us</h2>
-            <p>You can email us at:</p>
-            <p class="text-center"><strong><a href="mailto:enquiries@cappandson.co.uk">enquiries@cappandson.co.uk</a></strong></p>
-            <p>You can email anything from a simple question to an enquiry request.</p>
-        </div>
+    <div class="col-xs-12 col-sm-6">
+        include "prefer-a-chat.html"
+    </div>
 
-        <div class="col-xs-12">
-            include "prefer-a-chat.html"
-        </div>
-
-        <div class="col-xs-12">
-            include "quote-form.html"
-        </div>
+    <div class="col-xs-12">
+        include "quote-form.html"
     </div>
 </div>
 
