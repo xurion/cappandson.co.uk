@@ -2,12 +2,14 @@ include "header.html"
 
 <div class="row">
 
-    <div class="col-xs-12">
+    <div class="col-xs-12 col-sm-6">
         <h1>Electricians, Southend</h1>
         <p>Steve Capp has built a local reputation over many years for quality and service. The Capp and son business is now in its fourth generation and has been run as a family business since it began in 1895.</p>
         <p>Call <strong>01702 547816</strong> today for a free quotation or <a href="contact-us.html">contact us</a>.</p>
         <p>There's no job too big or too small!</p>
+    </div>
 
+    <div class="col-xs-12 col-sm-6">
         <h2>Electrical services</h2>
         <ul class="electrical-services bulleted">
             <li>House rewires</li>
@@ -17,22 +19,31 @@ include "header.html"
             <li>Fuse board replacement</li>
             <li>Free quotes</li>
         </ul>
-        <a href="services.html" class="btn btn-primary btn-block">All services</a>
+        <a href="services.html" class="btn btn-primary btn-block-xs">All services &raquo;</a>
+    </div>
 
+    <div class="col-xs-12 col-sm-6">
         include "quote-form.html"
+    </div>
 
+    <div class="col-xs-12 col-sm-6">
+        include "prefer-a-chat.html"
+    </div>
+
+    <div class="col-xs-12">
         <div class="areas-we-cover">
 
             <h2>The areas we cover</h2>
 
             <p>Capp and son are based in Rochford, but we cover a much wider area across Essex.</p>
-            <p><a href="area-coverage.html"><img src="images/map.gif" alt="The areas we cover" class="map-thumbnail img-responsive"></a></p>
+            <p><a href="area-coverage.html">
+                <img src="images/map.gif" alt="The areas we cover" class="map-thumbnail img-responsive visible-xs">
+                <img src="images/map-thumb.jpg" alt="The areas we cover" class="map-thumbnail img-responsive hidden-xs">
+            </a></p>
             <p>Even if you are outside of our coverage area we will still make every effort to get to you!</p>
             <p><a href="contact-us.html">Contact us</a> to find out if we can get to you<span class="hidden-xs"> or view our <a href="area-coverage.html">full coverage map</a></span>.</p>
 
         </div>
-
-        include "prefer-a-chat.html"
 
     </div>
 </div>

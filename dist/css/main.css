@@ -6872,9 +6872,17 @@ ul.bulleted li {
   border: none;
   padding-right: 0;
 }
+.btn-block-xs {
+  display: block;
+  width: 100%;
+}
 @media (min-width: 768px) {
   .contact-details {
     text-align: right;
+  }
+  .btn-block-xs {
+    display: inline-block;
+    width: auto;
   }
 }
 .electrical-services {
