@@ -6919,3 +6919,6 @@ ul.bulleted li {
   display: inline-block;
   min-width: 210px;
 }
+.area-map {
+  margin-bottom: 5px;
+}
