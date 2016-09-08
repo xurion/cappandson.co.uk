@@ -6780,7 +6780,6 @@ ul.bulleted li {
   display: block;
   font-size: 1.3em;
   font-weight: bold;
-  text-decoration: none;
 }
 .main-menu {
   margin-bottom: 1px;
@@ -6872,6 +6871,11 @@ ul.bulleted li {
 .footer .base-menu .base-menu-item:last-child {
   border: none;
   padding-right: 0;
+}
+@media (min-width: 768px) {
+  .contact-details {
+    text-align: right;
+  }
 }
 .electrical-services {
   padding-left: 10px;
