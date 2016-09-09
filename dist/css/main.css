@@ -6888,8 +6888,9 @@ ul.bulleted li {
 .electrical-services {
   padding-left: 10px;
 }
-.areas-we-cover .map-thumbnail {
+.map-thumbnail {
   border: 2px solid #2a536c;
+  margin-bottom: 10px;
 }
 .contact-numbers {
   padding-left: 20px;
