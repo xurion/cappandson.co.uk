@@ -6754,6 +6754,11 @@ ul.bulleted li {
   margin-bottom: 10px;
   padding-left: 20px;
 }
+.bullet-point {
+  background: url(../images/plug-icon.png) no-repeat 5px 0;
+  margin-bottom: 10px;
+  padding-left: 25px;
+}
 .header-row {
   padding-bottom: 5px;
   padding-top: 5px;
