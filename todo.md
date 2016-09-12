@@ -1,6 +1,5 @@
 # cappandson.co.uk
 
-* Restructure the list of services on index to allow use of space with col-md-6 or col-lg-6.
 * Create a favicon of the small plug icon
 * Add 'thanks' confirmation to top of page after submit of form
   * Requires JavaScript detection of query string.
