@@ -21,7 +21,8 @@ module.exports = function(grunt) {
         clean: {
 
             html: ['dist/*.html'],
-            images: ['dist/images']
+            images: ['dist/images'],
+            scripts: ['dist/scripts']
         },
         copy: {
 
@@ -35,7 +36,30 @@ module.exports = function(grunt) {
                     dest: 'dist/images/',
                     filter: 'isFile'
                 }]
+            },
+            angular: {
+
+                files: [{
+
+                    cwd: 'bower_components/angular',
+                    expand: true,
+                    src: ['angular.min.js'],
+                    dest: 'dist/scripts/',
+                    filter: 'isFile'
+                }]
+            },
+            app: {
+
+                files: [{
+
+                    cwd: 'src/scripts/src',
+                    expand: true,
+                    src: ['**/*.js'],
+                    dest: 'dist/scripts/',
+                    filter: 'isFile'
+                }]
             }
+
         },
         less: {
 
@@ -46,6 +70,16 @@ module.exports = function(grunt) {
                     'dist/css/main.css': 'src/less/main.less'
                 }
             }
+        },
+        karma: {
+
+            unit: {
+
+                options: {
+
+                    configFile: 'karma.conf.js'
+                }
+            }
         }
     });
 
@@ -53,7 +87,8 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-less');
+    grunt.loadNpmTasks('grunt-karma');
 
     grunt.registerTask('default', ['build']);
-    grunt.registerTask('build', ['clean', 'copy', 'less', 'includes']);
+    grunt.registerTask('build', ['karma', 'clean', 'copy', 'less', 'includes']);
 };

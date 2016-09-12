@@ -14,9 +14,9 @@
 
     </head>
 
-    <body>
+    <body data-ng-app="CappAndSonApp">
 
-        <div class="container">
+        <div class="container" data-ng-controller="Main">
 
             <div class="row one-border"></div>
 
@@ -84,7 +84,7 @@
             <div class="row footer">
 
                 <div class="col-xs-12 text-center">
-                    <p><small>Copyright &copy; Capp and son 2016. All rights reserved.</small></p>
+                    <p><small>Copyright &copy; Capp and son {{ loadDate | date:'y' }}. All rights reserved.</small></p>
 
                     <small><a href="/">Home</a> |
                     <a href="services.html">Services</a> |
@@ -96,13 +96,13 @@
 
         </div>
 
-        <link href="css/jquery-ui/start/jquery-ui-1.8.20.custom.css" rel="stylesheet">
         <link href="css/main.css" rel="stylesheet">
 
-        <script type="text/javascript" src="script/jquery.js"></script>
-        <script type="text/javascript" src="script/jquery-ui/jquery-ui-1.8.20.custom.min.js"></script>
-        <script type="text/javascript" src="script/common.js"></script>
+        <script type="text/javascript" src="scripts/angular.min.js"></script>
+        <script type="text/javascript" src="scripts/app.js"></script>
+        <script type="text/javascript" src="scripts/controllers/MainController.js"></script>
 
     </body>
 
 </html>
+
