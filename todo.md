@@ -14,5 +14,4 @@
   * Unsure if this is a built-in functionality of a browser or there is development required.
 * Implement Google analytics
   * Needs a dedicated account set up for analytics@cappandson.co.uk.
-* Fix indent of the site header.
 * Look into bootstrap 4.

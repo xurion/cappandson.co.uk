@@ -6889,6 +6889,12 @@ ul.bulleted li {
     display: inline-block;
     width: auto;
   }
+  .logo-wrapper {
+    padding-left: 0;
+  }
+  .contact-details {
+    padding-right: 0;
+  }
 }
 .electrical-services {
   padding-left: 10px;
