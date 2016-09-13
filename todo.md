@@ -1,8 +1,6 @@
 # cappandson.co.uk
 
 * Add 'thanks' confirmation to top of page after submit of form
-  * Need to enable origin field to work in quote.
-    * Maybe the PHP mail sender can handle this.
 * Create a favicon of the small plug icon
   * Need access to original PSD file for plug icon.
 * Create dynamic titles for each page, for example "Services" rather than just "Capp and son electricians, Southend, Essex".
