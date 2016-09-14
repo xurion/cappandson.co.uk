@@ -1,5 +1,7 @@
 # cappandson.co.uk
 
+* Limit text area in quote form to max width 100%
+* Limit form width on sm devices by displaying at 10 cols + 1 pushed
 * Add 'thanks' confirmation to top of page after submit of form
 * Create a favicon of the small plug icon
   * Need access to original PSD file for plug icon.
