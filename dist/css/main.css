@@ -6785,6 +6785,16 @@ ul.bulleted li {
 .logo {
   margin-bottom: 5px;
 }
+.telephone-number-link {
+  color: inherit;
+  cursor: default;
+}
+.telephone-number-link:hover,
+.telephone-number-link:focus,
+.telephone-number-link:active {
+  color: inherit;
+  text-decoration: none;
+}
 .contact-details {
   color: #315b75;
   text-align: center;
@@ -6919,14 +6929,14 @@ ul.bulleted li {
   padding-left: 10px;
 }
 .map-thumbnail {
-  border: 2px solid #2a536c;
+  border: 2px solid #315b75;
   margin-bottom: 10px;
 }
 .contact-numbers {
   padding-left: 20px;
 }
 .contact-numbers .contact-number {
-  color: #275268;
+  color: #315b75;
   font-size: 29px;
   font-weight: bold;
   line-height: 32px;

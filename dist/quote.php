@@ -7,4 +7,4 @@ $headers = 'From: ' . $_POST['email'] . "\r\n" .
 
 mail($to, $subject, $message, $headers);
 
-header('location: ' . $_SERVER['HTTP_REFERER'] . '?sent=1');
+header('location: ' . $_SERVER['HTTP_REFERER'] . '#?sent=1');
