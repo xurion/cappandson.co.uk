@@ -6773,6 +6773,9 @@ ul.bulleted li {
   margin-bottom: 10px;
   padding-left: 20px;
 }
+textarea {
+  max-width: 100%;
+}
 .bullet-point {
   background: url(../images/plug-icon.png) no-repeat 5px 0;
   margin-bottom: 10px;
