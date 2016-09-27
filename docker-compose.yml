@@ -1,0 +1,7 @@
+dist:
+    image: nginx
+    volumes:
+        - ./docker/nginx.conf:/etc/nginx/nginx.conf
+        - ./dist:/var/www
+    ports:
+        - "80:80"

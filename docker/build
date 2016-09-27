@@ -1,0 +1,3 @@
+#!/bin/sh
+
+docker build -t capp-and-son .

@@ -6,10 +6,17 @@ The main website files for cappandson.co.uk.
 
 An Nginx Docker container can run all static files from the dist directory.
 
-### Starting the container
+### Building the container
+docker/build
 
-docker run --name capp-and-son -d -p 8080:80 capp-and-son
+### Starting the container
+docker/start
 
 ### Stopping the container
+docker/stop
 
-docker kill capp-and-son; docker rm capp-and-son
+### Removing the container
+docker/remove
+
+### Access the machine
+docker/run

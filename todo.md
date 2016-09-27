@@ -1,6 +1,6 @@
 # cappandson.co.uk
 
-* Add nginx docker image for local development.
+* Mount a volume for the Nginx container rather than Dockerfile COPY
 * Add php docker image for local form submission.
 * Add 'thanks' confirmation to top of page after submit of form.
 * Create a favicon of the small plug icon.

@@ -1,0 +1,3 @@
+#!/bin/sh
+
+docker run -ti capp-and-son /bin/bash
